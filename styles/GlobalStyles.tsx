@@ -5,7 +5,6 @@ export const GlobalStyles = () => (
   <Global
     styles={css`
       ${emotionReset}
-
       *, *::after, *::before {
         box-sizing: border-box;
         -moz-osx-font-smoothing: grayscale;

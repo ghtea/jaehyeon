@@ -67,7 +67,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/jsx-no-useless-fragment": ["error", { allowExpressions: true }],
-    "react/no-unknown-property": ["error", { ignore: ["css"] }],
+    "react/no-unknown-property": "off",
     // a11y
     "jsx-a11y/label-has-associated-control": ["error", { depth: 2 }],
   },

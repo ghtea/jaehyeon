@@ -1,6 +1,9 @@
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
-const Home = () => {
+const Logo = dynamic(() => import('@/components/canvas/Logo'), { ssr: false });
+
+const HomePage = () => {
   return (
     <>
       <Head>
@@ -14,4 +17,6 @@ const Home = () => {
   );
 };
 
-export default Home;
+HomePage.canvas = () => <Logo scale={0.5} route='/blob' position-y={-1} />;
+
+export default HomePage;
